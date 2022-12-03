@@ -1,0 +1,61 @@
+<html>
+<body>
+
+    <div onclick="mOver(this)" onclick="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    Mouse Over Me</div>
+
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Norway!</p>
+
+<p>Click the button to change the color of all p elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p >Hello Norway!</p>
+
+<p >Click the button to change the color of all p elements.</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<script>
+function myFunction() {
+  const myCollection = document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+
+function myFunction2() {
+  const myCollection2= document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection2.length; i++) {
+    myCollection2[i].style.color = "blue";
+  }
+}
+
+
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+
+</script>
+
+
+
+<h2>JavaScript HTML Events</h2>
+<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+</body>
+</html>

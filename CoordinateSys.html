@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<link href="layout.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><span class="content"><span class="reference"><a name="TOP" id="ref3"></a></span></span><img src="Banner.jpg" alt="Insert Logo Here" name="Insert_logo" width="90%" height="337" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CompInstructions.html">Computer Instructions</a></li>
+      <li><a href="Processing.html">Processing</a></li>
+      <li><a href="CoordinateSys.html">Pixels</a></li>
+      <li><a href="Functions.html" class="nav">Functions</a></li>
+
+    </ul>
+    <!-- end .sidebar1 --></div>
+<div class="content">
+    <h1 class="content">Coordinate System of Pixels</h1>
+  <p align="left" class="content">
+    <map name="Map">
+      <area shape="poly" coords="60,63,61,63" href="#">
+</map>
+  Seeing a graph is the best way to understand the numbers in the rect functions for instance. Understanding the coordinate system of computer graphics is pretty straightforward. If you have taken algebra, you will notice that this system is slightly different from the Cartesian Coordinate System.[<a href="#ref1">1</a>]<img src="Cartesian-coordinate-system.jpg" width="386" height="256" class="fltrt" align="right"> </p>
+  <p align="justify" class="content">The good news is that there is only 1 quadrant to worry about. The grid on the right is just two lines meeting at a point in the upper-left corner. As you know, the line in the West-East direction is called the <strong><span class="boldTerms">X-Axis </span></strong>and the one in the North-South direction is the <strong><span class="boldTerms">Y-Axis</span></strong>. The x-axis and y-axis meet at a special position called the <strong><span class="boldTerms">Origin.</span></strong> Both x and y-axis are divided into tiny colorful blocks called <strong><span class="boldTerms">Pixels</span></strong>, which make up everything you see on the screen. Without pixels, computer graphics would be very difficult to create. Because the parameters within a function literally tell you the amount of pixels needed, you will see the process of how computer graphics are made. </p>
+  <p align="justify" class="content"><a href="#TOP">Back To Top</a></p>
+  <h1 align="left" class="content">The Sketch Window </h1>
+  <p align="left"><img src="coordSystem.png" width="301" height="302" class="fltrt" align="right"></p>
+  <p align="left">[<a href="#ref2">2</a>]</p>
+  <p align="justify">In order to draw the rectangle [<a href="#ref2">3</a>], the computer needs to create a Sketch. The computer chooses a starting point within the sketch that will be the origin. Then, counts straight to the right on the x-axis and down on the y-axis to draw the sketch window. By default, the computer creates a window that is 100 pixels wide and 100 pixels high with an invisible border. Since the PDE was programmed to know geometry ahead of time, it knows that multiplying 100 X 100 will give us an area of 10,000 pixels to draw on (later, we will make the window bigger), big enough to draw the rectangle. The computer sees the code from <strong>Copy &amp; Paste Code 1 </strong>and does the same thing, but starts at the center of the sketch window, which is 50 pixels X 50 pixels. Then, draws 30 pixels to the left and 30 pixels down We now have a rectangle like<strong> t</strong>he graph below, which shows an approximation on where the pixels would be on the screen.</p>
+  <p align="justify"><a href="#TOP">Back To Top</a>  </p>
+  <hr>
+  <p>&nbsp;</p>
+  <p align="left" class="reference"><u>References</u></p>
+  <p align="left" class="reference"><a href="https://processing.org/reference/environment/#Coordinates"><a name="ref1" id="ref1"></a> 1.https://processing.org/reference/environment/#Coordinates</a>  </p>
+  <p align="left" class="reference"><a name="ref2" id="ref2"></a>2.<a href="https://processing.org/reference/rect_.html">https://processing.org/reference/rect_.html</a>  </p>
+  <p align="left" class="reference"><strong>Images</strong>:</p>
+  <p align="left" class="content">The Cartesian Coordinate system and x and y characters is in the public the domain. I made some modifications for demonstrate purposes</p>
+  <p align="left" class="content"><a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system#mediaviewer/File:Cartesian-coordinate-system.svg">http://en.wikipedia.org/wiki/Cartesian_coordinate_system#mediaviewer/File:Cartesian-coordinate-system.svg</a></p>
+  <p align="left" class="content">&nbsp;</p>
+  <p align="left" class="content"></p>
+  <p>&nbsp;</p>
+<p align="left">&nbsp;</p>
+  <!-- end .content --></div>
+<div class="footer">
+    <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
+    <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
+    <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

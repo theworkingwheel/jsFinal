@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<link href="layout.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"></a><span class="content"><span class="reference"><a name="TOP" id="ref2"></a></span></span><a href="#"><img src="Banner.jpg" alt="Insert Logo Here" name="Insert_logo" width="90%" height="337" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CompInstructions.html">Computer Instructions</a></li>
+      <li><a href="Processing.html">Processing</a></li>
+      <li><a href="CoordinateSys.html">Pixels</a></li>
+      <li><a href="Functions.html" class="nav">Functions</a></li>
+
+    </ul>
+    <!-- end .sidebar1 --></div>
+<div class="content">
+    <h1 class="content">Understanding Functions in Processing</h1>
+  <p align="justify" class="content">
+  Notice that Code Example 1 is in a certain format. Before clicking the play button and without any coding experience, you probably had no idea what that code would do. Code Example 1 is an example of many <strong><em>Functions</em></strong> [<a href="#ref1">1</a>]in PDE. Functions allow us to create graphics like the rectangle, as long as they are typed in a specific format.</p>
+  <p align="left" class="codeKey">Rectangle Code Key</p>
+  <p align="left" class="content">[<a href="#ref2">2</a>]</p>
+  <p align="left" class="codeKey"><img src="rectCode.png" width="179" height="68"></p>
+  <p align="justify" class="content">1) <strong><span class="boldTerms">Function Name</span></strong> -  A function name like rect tells you what type of command the PDE is performing whether that is a shape, color, math operation, etc.</p>
+  <p align="justify" class="content"> 2) <strong><span class="boldTerms">Left Parenthesis</span></strong> - &quot;(&quot; Parenthesis are used in many topics, like writing and math. A left Parenthesis tells the PDE to open the function so you could enter information.</p>
+  <p align="justify" class="content"> 3) <strong><span class="boldTerms">Parameters</span></strong> -  Parameters are the numbers inside the function. Each function has its own set of parameters and allows you to adjust the size of the shape. The amount of parameters can very. <span class="Processing"><strong>rect</strong>(50,50,30,30);</span> and <span class="Processing"><strong>point</strong>(45, 23);</span> have different parameters.</p>
+  <p align="justify" class="content"> 4) <strong><span class="boldTerms">Right Parenthesis</span></strong> - The right parenthesis &quot;)&quot; closes the function to tell the PDE that no more parameters are needed within a function.</p>
+  <p align="justify" class="content">5) <span class="boldTerms"><strong>Semicolon</strong></span> - Since the PDE (and other programming languages) give the computer step-by-step instructions to output information, a semicolon is needed to tell the computer to move on to the next step. </p>
+  <p align="left" class="content">For readable code, follow this format for multiple functions below.</p>
+  <p><strong class="codeKey">Copy &amp; Paste Code 2</strong> </p>
+  <p class="Processing">
+    <strong>ellipse(50,50,15,15);<br>
+      triangle(20, 75, 10, 20, 86, 75);<br>
+      line(50,50,70,20);</strong></p>
+  <p class="content"><a href="#TOP">Back To Top</a></p>
+  <hr>
+  <p class="Processing">&nbsp;</p>
+  <h1 class="content">Creating Other Shapes</h1>
+  <p align="justify">For many aspiring math students, the names of these functions should be familiar. If not, fear not. Here is an example of the basic shapes. Each sketch window is 100 X 100 pixels.</p>
+  <p align="justify">A <strong><em>Point</em></strong>[<a href="#ref3">3</a>] is the simplest shape and      are made with pixels. The intersections of each pixel on the x and y-axis.      To create a Point, you need an x and y coordinate. Because pixels are      tiny, you have to zoom in to see them. Points in the PDE are the building      blocks for the basic shapes.</p>
+  <table width="200" border="1" cellpadding="0" class="content">
+    <tr>
+      <td><p align="center"><strong>Copy &amp; Paste Code</strong> <strong>&lt;/3&gt;</strong></p></td>
+      <td><p align="center" class="codeKey">Point Code Key</p></td>
+      <td><p align="center">Sketch</p></td>
+    </tr>
+    <tr>
+      <td><p class="Processing">point(50,50);</p></td>
+      <td><img src="pointCode.png" width="155" height="56"></td>
+      <td><img src="drawPoint.png" width="255" height="127"></td>
+    </tr>
+</table>
+  <p><a href="#TOP">Back To Top</a></p>
+  <ul type="disc">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>
+      <div align="justify">A <strong><em>Line </em></strong>[<a href="#ref4">4</a>] is a series of back-to-back      points and needs at least 2 points, a pair of x and y coordinates      separated by a certain distance, which are 2 edges of the line, also      called endpoints. The PDE will automatically draw more points between the      2 endpoints you created to draw the line. </div>
+    </li>
+  </ul>
+  <table border="1" cellpadding="0" width="200">
+    <tr>
+      <td><p align="center"><strong>Copy &amp; Paste Code &lt;/4&gt;</strong></p></td>
+      <td><p align="center" class="codeKey">Line Code Key</p></td>
+      <td><p align="center">Sketch</p></td>
+    </tr>
+    <tr>
+      <td><p class="Processing">line(50,50,70,20);</p></td>
+      <td><img src="lineCode.png" width="208" height="59"></td>
+      <td><img src="DrawLine.png" width="129" height="129"></td>
+    </tr>
+  </table>
+  <p><a href="#TOP">Back To Top</a></p>
+  <p align="justify">A <em><strong>Triangle </strong></em><span class="content">[<a href="#ref5">5</a>]</span> is made with 3 separate Points, forming 3 lines connected at their      endpoints, requiring 3 pairs of x and y coordinates. </p>
+  <table border="1" cellpadding="0" width="260">
+    <tr>
+      <td><p align="center"><strong>Copy &amp; Paste Code &lt;/5&gt;</strong></p></td>
+      <td><p align="center" class="codeKey"><strong>Triangle Code Key</strong></p></td>
+      <td><p align="center">Sketch</p></td>
+    </tr>
+    <tr>
+      <td><p class="Processing">triangle(20,   75, 10, 20, 86, 75);</p></td>
+      <td><img src="triangleCode.png" width="355" height="83"></td>
+      <td><img src="DrawTriangle.png" width="129" height="129"></td>
+    </tr>
+</table>
+  <ul type="disc">
+    <li>&nbsp;<a href="#TOP">Back To Top</a></li>
+  </ul>
+  <ul type="disc">
+    <li>
+      <div align="justify">An <em><strong>Ellipse </strong></em>[<a href="#ref6">6</a>] is a round object that has a x and y point at its center and a certain      width and height. Notice that the PDE starts drawing from the center      instead of the upper-left corner in the rectangle example. The ellipse is      drawn at all 4 corners from the center, forming a cross. If the width and      height are equal, the ellipse is a circle.</div>
+    </li>
+  </ul>
+  <table border="1" cellpadding="0" width="200">
+    <tr>
+      <td><p align="center"><strong>Copy &amp; Paste Code &lt;/6&gt;</strong></p></td>
+      <td><p align="center" class="codeKey">Ellipse Code Key</p></td>
+      <td><p align="center">Sketch</p></td>
+    </tr>
+    <tr>
+      <td><p class="Processing">ellipse(50,50,70,20);</p></td>
+      <td><img src="ellipseCode.png" width="249" height="79"></td>
+      <td><img src="drawEllipse.png" width="130" height="127"></td>
+    </tr>
+  </table>
+  <hr>
+  <h1 align="justify">My Redesign Choices</h1>
+  <p><strong>Banner</strong><br>
+    The adjustments I made to my site were the color scheme, type spacing and division of content. First, I modified the logo with a more cleaner look. Instead of 4 different colors, I only used 2, purple and black with different shades. The image on the left refers to a hand drawn geometric figures with their equations. The drawling contrasts the similar, digital version ideogram on the right. The plug means that the drawling is being digitized with the <em>Processing </em>software<em>.</em></p>
+  <p><strong>Navigation Menu </strong><br>
+    The navigation menu has the same purple with white text and a grey background for contrast. The content has divided into sections. Making the tutorial easier to digest.</p>
+  <p><strong>Layout Design</strong><br>
+    From my assessment, I thought I needed to change the color scheme. The previous site had a background that might have been too distracting for some users. There was a beige color that was intended for symbolism but overall served no purpose for users. The &ldquo;Home&rdquo; and &ldquo;Computer Instructions&rdquo; pages are laid out where the text is on the left and image and graphics on the right. These layouts are distinctive from that hands-on pages, such as &ldquo;Processing&rdquo;</p>
+  <p><strong>Font and Type</strong><br>
+    I had a low assessment font and website needs. First, I adjusted the line spacing to aid readability. The font of the source code examples were changed from Courier to Lucida Console which is a san-serif font.</p>
+  <p><a href="#TOP">Back To Top</a></p>
+  <hr>
+  <p><u>References</u></p>
+  <p align="left" class="reference"><a name="ref1" id="ref"></a>1.<a href="http://books.google.com/books?id=yrR1YoiM2EAC&printsec=frontcover#v=onepage&q&f=false">http://books.google.com/books?id=yrR1YoiM2EAC&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false</a></p>
+  <p align="left" class="reference">Page 20</p>
+  <p align="left" class="reference"><a name="ref2" id="ref2"></a>2. <a href="https://processing.org/reference/rect_.html">https://processing.org/reference/rect_.html</a></p>
+  <p align="left" class="reference"><a name="ref3" id="ref3"></a>3. <a href="https://www.processing.org/reference/point_.html">https://www.processing.org/reference/point_.html</a></p>
+  <p align="left" class="reference"><a name="ref4" id="ref4"></a>4. <a href="https://www.processing.org/reference/line_.html">https://www.processing.org/reference/line_.html</a></p>
+  <p align="left" class="reference"><a name="ref5" id="ref5"></a>5.<a href="https://www.processing.org/reference/triangle_.html"> https://www.processing.org/reference/triangle_.html</a></p>
+  <p align="left" class="reference"><a name="ref6" id="ref6"></a>6. <a href="https://processing.org/reference/ellipse_.html">https://processing.org/reference/ellipse_.html</a></p>
+  <p align="left" class="reference"><a href="#TOP">Back To Top</a></p>
+  <p align="left" class="content"></p>
+  <p>&nbsp;</p>
+  <ul type="disc">
+    <li>&nbsp;</li>
+  </ul>
+<p align="left" class="content"></p>
+</div>
+<div class="footer">
+    <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
+    <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
+    <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

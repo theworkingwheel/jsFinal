@@ -1,61 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<body>
-
-    <div onclick="mOver(this)" onclick="mOut(this)" 
-    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
-    Mouse Over Me</div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
 
 
-<h2>JavaScript HTML DOM</h2>
-
-<p>Hello World!</p>
-
-<p>Hello Norway!</p>
-
-<p>Click the button to change the color of all p elements.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-
-<h2>JavaScript HTML DOM</h2>
-
-<p>Hello World!</p>
-
-<p >Hello Norway!</p>
-
-<p >Click the button to change the color of all p elements.</p>
-
-<button onclick="myFunction2()">Try it</button>
-
-<script>
-function myFunction() {
-  const myCollection = document.getElementsByTagName("p");
-  for (let i = 0; i < myCollection.length; i++) {
-    myCollection[i].style.color = "red";
-  }
-}
-
-function myFunction2() {
-  const myCollection2= document.getElementsByTagName("p");
-  for (let i = 0; i < myCollection2.length; i++) {
-    myCollection2[i].style.color = "blue";
-  }
-}
-
-
-function mOver(obj) {
-  obj.innerHTML = "Thank You"
-}
-
-function mOut(obj) {
-  obj.innerHTML = "Mouse Over Me"
-}
+<link href="layout.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
 
 </script>
+ 
+<style> 
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+</style>
+</head>
+
+<body>
+
+
+  <div class="header"><a href="#"></a><span class="content"><span class="reference"><a name="ref1" id="ref4"></a></span></span><a href="#"><img src="Banner.jpg" alt="Insert Logo Here" name="Insert_logo" width="90%" height="337" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+  
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CompInstructions.html">Computer Instructions</a></li>
+      <li><a href="Processing.html">Processing</a></li>
+      <li><a href="CoordinateSys.html">Pixels</a></li>
+      <li><a href="Functions.html" class="nav">Functions</a></li>
+    </ul>
+ 
+    
+    <div class="row">
+      <div class="side">
+      <p >&nbsp;</p>
+      <p ><u>References</u></p>
+      <p>These images were have a creative commons</p>
+      <p><a></a>1.<a href="https://www.flickr.com/photos/migreenberg/7155283115/in/photostream/">source</a></p>
+      </div>
+      
+
+<div class="main">
+    <h1 class="content">Welcome!</h1>
+  <p style="text-align: justify;"  class="content">
+  In today's world, we all use a computer in some form. Computers help us with many tasks such as helping us with our academic studies[<a href="#ref1">1</a>], playing video games[<a href="#ref2">2</a>], posting Facebook statuses[<a href="#ref3">3</a>] and the list will keep growing. Due to our software dependence, understanding how computer programs are made is a valuable skill. Well, what does this have to do with math and graphic design? Computer programs complete these daily activities, which are builtwith math computer languages. I know! Math is a four-letter word for most people, even for people who create computer programs. <img src="DiagramIntro.png" width="302" height="253" class="fltrt" align="right" border="0">
+  Along with the difficulty of mathematical theories, I think that many math instructors don't give practical examples that most people could relate to. Computer languages are a new medium for graphic designers to generate complex designs that have better accuracy and precision. So, I'm going to show visual artist and math students with no programming experience, the basics of computer programming and its relationship with math and geometry with <em>Processing</em> [<a href="#ref4">4</a>].</p>
+  <hr>
+
+
+  
+  <p style="text-align: justify;"><a name="ref2" id="ref2"></a>2. <a href="https://www.flickr.com/photos/dave-monk/4958364349/in/photostream/">https://www.flickr.com/photos/dave-monk/4958364349/in/photostream/</a></p>
+  <p style="text-align: justify;">My actual Facebook user name is Danny Vacost. I changed the name using the browser devleoper tool.</p>
+  <p style="text-align: justify;"><a name="ref3" id="ref3"></a>3. <a href="https://www.facebook.com/dvacost?fref=ts">https://www.facebook.com/dvacost?fref=ts</a> - link seems to work only in Chrome</p>
+  
+  <p style="text-align: justify;"><a name="ref4" id="ref5"></a>4<a href="https://processing.org/">. https://processing.org/</a></p>
+  <p style="text-align: justify;"><a href="#TOP">Back To Top</a></p>
+  <p style="text-align: justify;">&nbsp;</p>
+  <!-- end .content -->
+  
+  
+</div>
+
+<h2 style="text-align:center">Click Here To Code A Shape</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="drawEllipse.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="DrawTriangle.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
 
 
-<h2>JavaScript HTML Events</h2>
-<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+
+</script>
+  
+
+  <!-- end .container --></div>
+
+  <div class="footer">
+    
+    <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
+    <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
+    <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>
+    
+  <!-- end .footer --></div>
+
 </body>
 </html>
