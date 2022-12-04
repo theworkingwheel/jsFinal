@@ -33,8 +33,10 @@
       <p>These images were have a creative commons</p>
       <p><a></a>1.<a href="https://www.flickr.com/photos/migreenberg/7155283115/in/photostream/">source</a></p>
       </div>
-        <!-- end .sidebar1 --></div>
-<div class="content">
+
+
+
+      <div class="main">
     <h1 class="content">Coordinate System of Pixels</h1>
   <p align="left" class="content">
     <map name="Map">
@@ -61,7 +63,109 @@
   <p>&nbsp;</p>
 <p align="left">&nbsp;</p>
   <!-- end .content --></div>
-<div class="footer">
+
+
+<!---->
+
+
+<h2 style="text-align:center">Click Here To Code A Shape</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <a href="https://dan850.github.io/jsFinal/Functions.html"><img src="drawEllipse.png" style="width:100%"></a>
+
+
+
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="DrawTriangle.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="DrawLine.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="drawPoint.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="rectCode.png" style="width:100%">
+  </div>
+    
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="drawEllipse.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawTriangle.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawLine.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="drawPoint.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rectCode.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+  
+
+  <!-- end .container --></div>
+
+
+
+  <div class="footer">
     <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
     <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
     <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>

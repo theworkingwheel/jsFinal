@@ -38,15 +38,9 @@
     
     
     
-    <!-- end .sidebar1 --></div>
-<div class="content">
+<div class="main">
     <h1 class="content"><strong>Instructing the Computer</strong></h1>
-  <p align="justify" class="content">
-    <map name="Map">
-      <area shape="poly" coords="3,-2,4,148,214,143,214,3" href="https://www.youtube.com/watch?v=eBV14-3LT-g&noredirect=1">
-    <area shape="poly" coords="60,63,61,63" href="#">
-</map>
-
+  
 
   What is Computer Programming? According to BusinessDictionary.com, it is “the process of developing and implementing various sets of instructions to enable a computer to do a certain task.”[<a href="#ref1">1</a>] What kind of instructions? More importantly, what type of task? We all know that we don’t have to be a computer programmer to give instructions to the computer.  In Photoshop, you give instructions to paint or draw by clicking on buttons in the toolbar. The buttons hide the code instructions that the programmer created, which make Photoshop easier to use.</p>
   <p align="justify" class="content"> Programming has been a tool in other disciplines for years and has changed the world the way we interact with common applications. There are dozens of computer languages and learning them can be intimidating like a math or a foreign language course.</p>
@@ -58,7 +52,113 @@
   <p align="left" class="reference"><a name="ref2" id="ref2"></a>2. <a href="https://www.youtube.com/watch?v=eBV14-3LT-g&noredirect=1">https://www.youtube.com/watch?v=eBV14-3LT-g&amp;noredirect=1</a></p>
   <p align="left" class="content"><a href="#TOP">Back To Top</a></p>
   <!-- end .content --></div>
-<div class="footer">
+
+
+
+  <!---->
+
+
+<h2 style="text-align:center">Click Here To Code A Shape</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <a href="https://dan850.github.io/jsFinal/Functions.html"><img src="drawEllipse.png" style="width:100%"></a>
+
+
+
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="DrawTriangle.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="DrawLine.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="drawPoint.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="rectCode.png" style="width:100%">
+  </div>
+    
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="drawEllipse.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawTriangle.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawLine.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="drawPoint.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rectCode.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+  
+  <!-- end .container --></div>
+
+
+
+
+
+
+
+  <div class="footer">
     <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
     <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
     <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>

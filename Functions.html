@@ -34,8 +34,7 @@
       <p><a></a>1.<a href="https://www.flickr.com/photos/migreenberg/7155283115/in/photostream/">source</a></p>
       </div>
     
-    <!-- end .sidebar1 --></div>
-<div class="content">
+<div class="main">
     <h1 class="content">Understanding Functions in Processing</h1>
   <p align="justify" class="content">
   Notice that Code Example 1 is in a certain format. Before clicking the play button and without any coding experience, you probably had no idea what that code would do. Code Example 1 is an example of many <strong><em>Functions</em></strong> [<a href="#ref1">1</a>]in PDE. Functions allow us to create graphics like the rectangle, as long as they are typed in a specific format.</p>
@@ -125,15 +124,7 @@
     </tr>
   </table>
   <hr>
-  <h1 align="justify">My Redesign Choices</h1>
-  <p><strong>Banner</strong><br>
-    The adjustments I made to my site were the color scheme, type spacing and division of content. First, I modified the logo with a more cleaner look. Instead of 4 different colors, I only used 2, purple and black with different shades. The image on the left refers to a hand drawn geometric figures with their equations. The drawling contrasts the similar, digital version ideogram on the right. The plug means that the drawling is being digitized with the <em>Processing </em>software<em>.</em></p>
-  <p><strong>Navigation Menu </strong><br>
-    The navigation menu has the same purple with white text and a grey background for contrast. The content has divided into sections. Making the tutorial easier to digest.</p>
-  <p><strong>Layout Design</strong><br>
-    From my assessment, I thought I needed to change the color scheme. The previous site had a background that might have been too distracting for some users. There was a beige color that was intended for symbolism but overall served no purpose for users. The &ldquo;Home&rdquo; and &ldquo;Computer Instructions&rdquo; pages are laid out where the text is on the left and image and graphics on the right. These layouts are distinctive from that hands-on pages, such as &ldquo;Processing&rdquo;</p>
-  <p><strong>Font and Type</strong><br>
-    I had a low assessment font and website needs. First, I adjusted the line spacing to aid readability. The font of the source code examples were changed from Courier to Lucida Console which is a san-serif font.</p>
+  
   <p><a href="#TOP">Back To Top</a></p>
   <hr>
   <p><u>References</u></p>
@@ -152,6 +143,112 @@
   </ul>
 <p align="left" class="content"></p>
 </div>
+
+
+
+<!---->
+
+
+<h2 style="text-align:center">Click Here To Code A Shape</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <a href="https://dan850.github.io/jsFinal/Functions.html"><img src="drawEllipse.png" style="width:100%"></a>
+
+
+
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="DrawTriangle.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="DrawLine.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="drawPoint.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="rectCode.png" style="width:100%">
+  </div>
+    
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="drawEllipse.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawTriangle.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="DrawLine.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="drawPoint.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rectCode.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+  
+
+  <!-- end .container --></div>
+
+
+
+
+
+
 <div class="footer">
     <p align="center" style="color: #815e96; font-size: 24px;"><strong>Daniel Acosta</strong></p>
     <p align="center"><strong>My Email: </strong><a href="mailto:dan06982@gmail.com">dan06982@gmail.com </a></p>
