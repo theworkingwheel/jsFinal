@@ -13,12 +13,17 @@
 
 <body>
 
-  <button type="button" onclick="myFunction()">Set background color</button>
-
+  
 
   <div class="header"><a href="#"></a><span class="content"><span class="reference"><a name="ref1" id="ref4"></a></span></span><a href="#"><img src="Banner.jpg" alt="Insert Logo Here" name="Insert_logo" width="90%" height="337" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
     <!-- end .header --></div>
   
+
+    <button type="button" onclick="myFunction()">Set background color</button>
+
+    <button type="button" onclick="myFunction2()">Set background color</button>
+  
+
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
       <li><a href="CompInstructions.html">Computer Instructions</a></li>
@@ -120,49 +125,6 @@
   </div>
 </div>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-function myFunction() {
-  document.body.style.backgroundColor = "black";
-  
-  const myCollection = document.getElementById(".main").querySelector("background-color");
-  for (let i = 0; i < myCollection.length; i++) {
-    myCollection[i].style.color = "white";
-  }
-  
-}
-
-
-
-</script>
   
 
   <!-- end .container --></div>
@@ -174,6 +136,9 @@ function myFunction() {
     <p align="center"><strong>My Blog: </strong><a href="http://tangledwebtwo.blogspot.com/">Tangled web 2</a></p>
     
   <!-- end .footer --></div>
+
+  <script src="event.js"></script>
+
 
 </body>
 </html>
