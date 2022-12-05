@@ -59,3 +59,40 @@ function mOut(obj) {
 <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
 </body>
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML Style Object</h1>
+<h2>The backgroundColor Property</h2>
+
+<button type="button" onclick="myFunction()">Set background color</button>
+
+
+<button type="button" onclick="myFunction2()">Set background color</button>
+
+
+
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "black";
+}
+
+
+function myFunction2() {
+  const myCollection = document.getElementsByTagName("h1");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+
+</script>
+
+</body>
+</html>

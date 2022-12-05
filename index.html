@@ -13,6 +13,8 @@
 
 <body>
 
+  <button type="button" onclick="myFunction()">Set background color</button>
+
 
   <div class="header"><a href="#"></a><span class="content"><span class="reference"><a name="ref1" id="ref4"></a></span></span><a href="#"><img src="Banner.jpg" alt="Insert Logo Here" name="Insert_logo" width="90%" height="337" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
     <!-- end .header --></div>
@@ -147,6 +149,18 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function myFunction() {
+  document.body.style.backgroundColor = "black";
+  
+  const myCollection = document.getElementById(".main").querySelector("background-color");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "white";
+  }
+  
+}
+
+
 
 </script>
   

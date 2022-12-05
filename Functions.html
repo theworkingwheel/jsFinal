@@ -58,6 +58,9 @@
   <h1 class="content">Creating Other Shapes</h1>
   <p align="justify">For many aspiring math students, the names of these functions should be familiar. If not, fear not. Here is an example of the basic shapes. Each sketch window is 100 X 100 pixels.</p>
   <p align="justify">A <strong><em>Point</em></strong>[<a href="#ref3">3</a>] is the simplest shape and      are made with pixels. The intersections of each pixel on the x and y-axis.      To create a Point, you need an x and y coordinate. Because pixels are      tiny, you have to zoom in to see them. Points in the PDE are the building      blocks for the basic shapes.</p>
+  
+  
+  
   <table width="200" border="1" cellpadding="0" class="content">
     <tr>
       <td><p align="center"><strong>Copy &amp; Paste Code</strong> <strong>&lt;/3&gt;</strong></p></td>
@@ -70,6 +73,31 @@
       <td><img src="drawPoint.png" width="255" height="127"></td>
     </tr>
 </table>
+
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+
+
+
+ <table width="200" border="1" cellpadding="0" class="content">
+    <tr>
+      <td><p align="center"><strong>Copy &amp; Paste Code</strong> <strong>&lt;/3&gt;</strong></p></td>
+      <td><p align="center" class="codeKey">Point Code Key</p></td>
+      <td><p align="center">Sketch</p></td>
+    </tr>
+    <tr>
+      <td><p class="Processing">point(50,50);</p></td>
+      <td><img src="pointCode.png" width="155" height="56"></td>
+      <td><img src="drawPoint.png" width="255" height="127"></td>
+    </tr>
+</table>
+
+
+</div>
+
+
+
   <p><a href="#TOP">Back To Top</a></p>
   <ul type="disc">
     
@@ -238,6 +266,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+///////////////////////////////////////////////////////////
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 
 </script>
   
